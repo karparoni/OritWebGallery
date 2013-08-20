@@ -29,7 +29,7 @@
               </li>
                     
                             
-            <g:if test="${session.user}">
+          <%--   <g:if test="${session.user}">  --%>
     	     <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">${message(code: 'custom.navigation.admin', default: 'Admin Control')}<b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -37,13 +37,15 @@
                 <li><a href="${createLink(controller:'photo')}">${message(code: 'custom.navigation.Photo', default: 'Photo')}</a></li>
                 </ul>
               </li>
-			</g:if>
+		<%-- 	</g:if>  --%>
                  
 
-            
+        <%--   
               <li>
               <g:loginControl />
               </li>
+              
+              --%>
             </ul>
             <%--
             <form class="navbar-form pull-right">
